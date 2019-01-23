@@ -26,3 +26,10 @@ tests/CDSChecker/model-checker/
 tests/relacy/freelist.exe
 tests/relacy/spmchash.exe
 tests/relacy/log.txt
+
+.buckd
+.buckconfig.local
+.buckconfig.d
+buck-out
+buckaroo
+buckaroo_macros.bzl

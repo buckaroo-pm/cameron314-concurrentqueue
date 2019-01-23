@@ -1,0 +1,14 @@
+cxx_binary(
+  name = 'unittests',
+  header_namespace = '',
+  headers = glob([
+    '*.h',
+  ]),
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = [
+    '//:concurrentqueue',
+    '//tests/common:common',
+  ],
+)
