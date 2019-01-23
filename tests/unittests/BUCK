@@ -1,3 +1,7 @@
+load('//:buckaroo_macros.bzl', 'buckaroo_deps_from_package')
+
+pthread = buckaroo_deps_from_package('github.com/buckaroo-pm/host-pthread')
+
 cxx_binary(
   name = 'unittests',
   header_namespace = '',
@@ -10,5 +14,8 @@ cxx_binary(
   deps = [
     '//:concurrentqueue',
     '//tests/common:common',
+  ],
+  platform_deps = [
+    ('linux.*', pthread),
   ],
 )

@@ -19,6 +19,10 @@ os:
   - linux
   - osx
 
+cache:
+  directories:
+    - $HOME/.buckaroo/cache
+
 env:
   - BUCKAROO_VERSION=buckaroo-redux-alpha-12
 
